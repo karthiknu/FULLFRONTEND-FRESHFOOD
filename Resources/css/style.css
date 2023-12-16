@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;   
+    box-sizing: border-box;
 }
+
 html,
-body{
+body {
     background-color: #ffffff;
     color: black;
     font-family: 'Lato', sans-serif;
@@ -13,20 +14,23 @@ body{
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
-.row{
+
+.row {
     max-width: 1140px;
     margin: 0 auto;
-
 }
-header{
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('img/hero1-image.jpeg');
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('img/hero1-image.jpeg');
     background-attachment: fixed;
     height: 100vh;
     background-size: cover;
     background-position: center;
     margin-top: -20px;
 }
-h1{
+
+h1 {
     margin-top: 0;
     margin-bottom: 20px;
     padding: 0;
@@ -37,13 +41,34 @@ h1{
     letter-spacing: 1px;
     word-spacing: 3px;
 }
-.hero-text-box{
+
+.hero-text-box {
     position: absolute;
-    width: 1140px;
+    width: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
+ /* ... (previous styles) ... */
+
+.section-testimonials,
+.section-cities,
+.section-steps {
+    clear: both; /* Add this to prevent sections from overlapping */
+}
+
+.section-cities {
+    background-color: #f4f4f4;
+    height: auto; /* Adjust height as needed */
+    margin-top: -210px;
+    margin-bottom: -350px;
+}
+
+.section-steps {
+    padding: 80px 0; /* Adjust padding as needed */
+}
+
+
 .btn:link,
 .btn:visited,
 input[type=submit]{
@@ -314,12 +339,9 @@ box {
  }
  .section-testimonials{
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/back-cust.jpeg);
-    background-attachment: fixed;
-    height: 100vh;
     background-size: cover;
-    background-position: center;
-    margin-top: 300px;
     color: #fff;
+    background-attachment: fixed;
     
  }
 .section-cities{
